@@ -2,7 +2,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
-#include<map>
+#include<unordered_map>
 #include<fstream>
 #include <algorithm>
 
@@ -53,7 +53,7 @@ class fileHandling{
 
 class StringFrequencyHashMap{
     private:
-    std::map<std::string,unsigned int> hashMap;
+    std::unordered_map<std::string,unsigned int> hashMap;
 
     public: 
     void addWord(std::string string){
